@@ -29,10 +29,6 @@ String.prototype.extenso = function(c){
 let negocio = new Function("a", "return 'O menor inteiro positivo que não pode ser nomeado com menos de '+a+' palavras'");
 
 function fulaniza(){
-	let numerais = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-	let dez = ['onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove'];
-	let dezenas = ['vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa'];
-	
 	for(var i=0;i<10000;i++){
 		var str = negocio(i.toString().extenso());
 		if(str.split(" ").length == i){
